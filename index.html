@@ -1,27 +1,27 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Beauty Website</title>
+<title>Beauty Website</title>
 </head>
 
+<!-- Divide page into 3 rows -->
 <frameset rows="20%,10%,70%" border="1">
+
+    <!-- Row 1: Logo + Header -->
     <frameset cols="20%,80%">
         <frame src="logo.html">
         <frame src="header.html">
     </frameset>
 
-    <frameset cols="20%,20%,20%,20%,20%">
-        <frame src="home.html" name="top1">
-        <frame src="login.html" name="top2">
-        <frame src="register.html" name="top3">
-        <frame src="catalogue.html" name="top4">
-        <frame src="cart.html" name="top5">
+    <!-- Row 2: Menu -->
+    <frame src="menu.html">
+
+    <!-- Row 3: Left menu + Right content -->
+    <frameset cols="20%,80%">
+        <frame src="left.html">
+        <!-- IMPORTANT: load home.html by default -->
+        <frame src="home.html" name="rightframe">
     </frameset>
 
-    <frameset cols="20%,80%">
-        <frame src="services.html">
-        <frame src="description.html" name="rightframe">
-    </frameset>
 </frameset>
 
 </html>
