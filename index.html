@@ -1,30 +1,24 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title>Beauty Website</title>
-
-<style>
-    body { margin: 0; padding: 0; }
-    frameset { border: 1px solid #999; }
-</style>
-
 </head>
 
-<!-- Page divided into 3 rows (header, menu, content) -->
-<frameset rows="22%, 9%, 69%" border="1">
+<!-- Divide page into 3 rows -->
+<frameset rows="20%,10%,70%" border="1">
 
-    <!-- Row 1: Logo + Website Title -->
-    <frameset cols="18%,82%" border="1">
-        <frame src="logo.html" scrolling="no">
-        <frame src="header.html" scrolling="no">
+    <!-- Row 1: Logo + Header -->
+    <frameset cols="20%,80%">
+        <frame src="logo.html">
+        <frame src="header.html">
     </frameset>
 
-    <!-- Row 2: Navigation Menu -->
-    <frame src="menu.html" scrolling="no">
+    <!-- Row 2: Menu -->
+    <frame src="menu.html">
 
-    <!-- Row 3: Left Section + Right Content -->
-    <frameset cols="22%,78%" border="1">
+    <!-- Row 3: Left menu + Right content -->
+    <frameset cols="20%,80%">
         <frame src="left.html">
+        <!-- IMPORTANT: load home.html by default -->
         <frame src="home.html" name="rightframe">
     </frameset>
 
